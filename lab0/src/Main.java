@@ -71,6 +71,39 @@ public class Main {
 
 
             System.out.println("Zadanie 9");
+            System.out.println("     /\\_/\\            /_____\\");
+            System.out.println("    ( ' ' )          | Hello |");
+            System.out.println("c===(     )====c    <| In My |");
+            System.out.println("    \\ | | /          | World |");
+            System.out.println("    (_| |_)           \\_____/");
+
+
+
+
+
+
+
+
+
+
+            System.out.println("Zadanie 10");
+            System.out.println("Ulubieni przyjaciele: \nSosnowski\nSidor\nRuchała\n");
+
+            System.out.println("Zadanie 11");
+            System.out.println("Programowanie obiektowe cudnymi zajęciami jest,\nZabawa na nich jest dobra fest,\nSama Java bardzo mi się spodobała,\nPisząc ten wiersz, opisuje ile radości dała,\nPraca domowa jest w tej chwili robiona,\nPotwierdzi nawet to moja przyszła żona,\nKażde zadanie starannie wykonuje,\nTak szybko jak Szymborska swoje wiersze na papierze maluje.\n");
+
+            System.out.println("Zadanie 12");
+            System.out.println("*********************==================");
+            System.out.println("*********************==================");
+            System.out.println("*********************==================");
+            System.out.println("*********************==================");
+            System.out.println("=======================================");
+            System.out.println("=======================================");
+            System.out.println("=======================================");
+            System.out.println("=======================================");
+
+
+
 
 
     
