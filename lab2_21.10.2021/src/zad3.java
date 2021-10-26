@@ -1,5 +1,7 @@
+
 import java.util.Random;
 import java.util.Scanner;
+
 public class zad3 {
     public static int[][] generuj(int n, int m, int minWartosc,int maxWartosc) {
         Random generator = new Random();
@@ -10,6 +12,14 @@ public class zad3 {
                 macierz[i][j] =  generator.nextInt (maxWartosc+1+maxWartosc)+minWartosc;
             }
         }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                System.out.print(macierz[i][j]);
+                System.out.print(" ");
+            }
+            System.out.print("\n");
+        }
+        System.out.println();
         return macierz;
     }
     public static void main(String[] args) {
@@ -28,7 +38,7 @@ public class zad3 {
                 for(int j=0;j<k;j++){
                     int subSum = 0;
                     for(int q=0;q<n;q++){
-                        subSum += macierzA[i,q]*macierzB[q,j];
+                        subSum += macierzA[i][q]*macierzB[q][j];
                     }
                     macierzC[i][j]=subSum;
                 }
