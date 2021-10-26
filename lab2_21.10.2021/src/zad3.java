@@ -1,3 +1,5 @@
+import java.util.Random;
+import java.util.Scanner;
 public class zad3 {
     public static int[][] generuj(int n, int m, int minWartosc,int maxWartosc) {
         Random generator = new Random();
