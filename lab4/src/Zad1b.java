@@ -1,21 +1,30 @@
 import java.util.Scanner;
 
 public class Zad1b {
-    public static  int countSubStr(String str, String subStr) {
-        int iloscWyrazu = 0;
-        str = str.trim();
-        if (str.contains(subStr)) {
-        iloscWyrazu += 1;
-        }
-        return iloscWyrazu;
+
+    public static int countSubStr(String str, String subStr) {
+      int li=0;
+      int wynik=0;
+      while(li!=-1)
+      {
+          li= str.indexOf(subStr,li);
+          if(li!=-1)
+          {
+              wynik++;
+              li+=subStr.length();
+          }
+      }
+      return wynik;
     }
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj słowo bądz ciąg słów, który mam przeszukać");
-        String Ciag = scanner.next();
-        System.out.println("Powiedz słowo, którego ilość chcesz sprawdzić w podanym wyżej ciągu słów/słowie");
-        Scanner scan= new Scanner(System.in);
-        String slowo = scan.next();
-        System.out.println("Słowo występuje w słowie/Ciągu słów: " + countSubStr(Ciag,slowo) + " razy" );
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj dowolne slowo: ");
+        System.out.print("> ");
+        String str = scan.nextLine();
+        System.out.println("Podaj slowo, ktorego szukasz: ");
+        System.out.print("> ");
+        String subStr = scan.nextLine();
+        System.out.println("Liczba powtórzeń slowa " + subStr + " wynosi: " + countSubStr(str, subStr));
     }
 }
