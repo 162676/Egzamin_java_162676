@@ -1,25 +1,25 @@
 import java.util.Scanner;
 public class Zad1c {
     public static String Middle(String str) {
-        int pozycja;
-        int len;
-        if (str.length() % 2 == 0) {
-            pozycja = str.length() /2 -1;
-            len=2;
+       int zmienna;
+        int dlugosc;
+        if(str.length()%2==0)
+        {
+            zmienna = str.length()/2-1;
+            dlugosc=2;
         }
         else
         {
-            pozycja = str.length()/2;
-            len=1;
+            zmienna = str.length()/2;
+            dlugosc=1;
         }
-        return str.substring(pozycja, pozycja + len);
-        }
+        return str.substring(zmienna,zmienna+dlugosc);
+    }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Podaj slowo: ");
-        System.out.print("> ");
-        String str = in.nextLine();
-        System.out.print("Srodkowa litera to: " + Middle(str)+"\n");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj słowo, któego wyznacze środek");
+        String slowo = scan.nextLine();
+        System.out.println("Srodkowa litera/badz 2 litery to: "+Middle(slowo));
     }
 }

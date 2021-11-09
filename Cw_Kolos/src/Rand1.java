@@ -3,31 +3,29 @@ import java.util.Random;
 public class Rand1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj ilość liczb, które chcesz wczytać");
+        System.out.println("Ile liczb chcesz czytać: ");
         int n = scanner.nextInt();
-        int empty_parzyste=0;
-        int empty_nieparzyste=0;
-        if(n>=1 && n<=100)
+        int Parz = 0;
+        int Nieparz=0;
+        if(n>=1 && n<=99)
         {
-            int list[] = new int[n];
-            Random generator=new Random();
+            int tab[] = new int[n];
+            Random losowa = new Random();
             for(int i=0;i<n;i++)
             {
-                list[i] = generator.nextInt(1999)-999;
-                System.out.println(list[i]);
-            }
-            for(int i=0;i<n;i++)
-            {
-                if(list[i]%2==0)
+                tab[i] = losowa.nextInt(1999)-999;
+                System.out.println(tab[i]);
+                if(tab[i]%2==0)
                 {
-                    empty_parzyste++;
+                    Parz++;
                 }
                 else
                 {
-                    empty_nieparzyste++;
+                    Nieparz++;
                 }
             }
         }
-        System.out.println("Parzyste: " + empty_parzyste + " Nieparzyste: " + empty_nieparzyste);
+        System.out.println("Parzystych jest: "+ Parz);
+        System.out.println("Niearzystych jest: "+ Nieparz);
     }
 }
