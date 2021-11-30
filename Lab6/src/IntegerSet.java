@@ -54,10 +54,11 @@ public class IntegerSet {
                 test2.insertElement(24);
 
                 System.out.println(test2);
-                IntegerSet test4 = IntegerSet.intersection(test, test2);
-                System.out.println(test4);
                 IntegerSet test3 = IntegerSet.union(test, test2);
                 System.out.println(test3);
+                IntegerSet test4 = IntegerSet.intersection(test, test2);
+                System.out.println(test4);
+
                 test3.deleteElement(24);
                 test3.deleteElement(81);
             }
