@@ -59,8 +59,8 @@ public class IntegerSet {
                 IntegerSet test4 = IntegerSet.intersection(test, test2);
                 System.out.println(test4);
 
+                test3.deleteElement(7);
                 test3.deleteElement(24);
-                test3.deleteElement(81);
             }
         }
 
