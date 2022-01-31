@@ -1,8 +1,0 @@
-I nastał ten, moment ta chwila,
-w mym sercu rozpacz utkwiła,
-Odczyt pliku w zadaniu się pojawił,
-I niezłych emocji przy licznych błędach nabawił,
-Ale w końcu kod działa i podczas wiersz wypisuje,
-Lepiej niż na kolosie ostatnim, kod się tam wynikami nie popisuje,
-I tak sprawdzam, czy kodzik ładnie działa,
-Na pewno lepiej niż moja z kolosa pała.
